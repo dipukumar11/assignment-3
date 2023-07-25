@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+
+<!-- google font hear -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Font Asswam hrar -->
+<script src="https://kit.fontawesome.com/1f5d96f5ba.js" crossorigin="anonymous"></script>
+
+
+
+
+
 <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
             clifford: '#da373d',
+            
           }
         }
       }
@@ -22,7 +36,12 @@
   </script>
 
 
+<style>
+.font-lato{
+  font-family: 'Lato', sans-serif;
+}
 
+</style>
 
 
 
@@ -30,7 +49,200 @@
 
 
 </head>
-<body>
+<body class="font-lato">
+
+<header class="container mx-auto  mt-12  ">
+<section class=" lg:flex lg:justify-between p-4 lg:items-center lg:text-center m-auto bg-[#F85559] rounded-full  ">
+  <div class="">
+    <ul class="flex gap-x-5 text-lg text-white">
+      <li><a href="#">Home</a></li>
+      <li><a href="#"></a>About Us</li>
+      <li><a href="#"></a>Shop</li>
+      <li><a href="#"></a>Al fruits</li>
+    </ul>
+
+  </div>
+  <div class="flex gap-3 items-center">
+   <img src="images/logo.png" alt="">
+   <h1 class="font-extrabold text-white text-4xl">Fruit Burst</h1>
+
+
+
+  </div>
+
+  <div class="p-5 ">
+    <input type="text" placeholder="Search her" class="rounded-full w-56 p-2 relative">
+    <i class="fa-solid fa-magnifying-glass absolute -ml-7 mt-2"></i>
     
+
+  </div>
+</section>
+
+<!-- banar Section  -->
+
+<section class="my-12  ">
+
+  <div class="carousel w-full z-0 relative">
+    <div id="slide1" class="carousel-item relative w-full">
+     <div class="relative">
+      <img src="images/banner1.png" class="w-full"  />
+      
+     </div>
+
+
+     <div class="absolute w-full  m-auto text-center  lg:mt-16 space-y-3  ">
+      <h1 class="lg:text-5xl text-3xl font-extrabold text-white" >Exotic tastes at your <br> doorstep</h1>
+      <p class="font-bold text-sm text-white">We supply highly quality organic products</p>
+      <button class="btn bg-[#F85559] text-white font-bold border-none">Shop Now</button>
+     </div>
+
+
+
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="images/banner2.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="images/banner3.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="images/banner4.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</section>
+
+
+<section class="absolute w-full">
+
+
+  <div class="bg-white w-9/12 m-auto lg:-mt-28 z-40 rounded-lg grid-cols-1   ">
+    <div class="flex justify-between p-5 ">
+  
+        <div>
+          <img src="images/fruit1.png" alt="">
+          <h5>Strawberry</h5>
+        </div>
+        <div>
+          <img src="images/fruit2.png" alt="">
+          <h5>Strawberry</h5>
+        </div>
+        <div>
+          <img src="images/fruit3.png" alt="">
+          <h5>Strawberry</h5>
+        </div>
+        <div>
+          <img src="images/fruit4.png" alt="">
+          <h5>Strawberry</h5>
+        </div>
+        <div>
+          <img src="images/fruit5.png" alt="">
+          <h5>Strawberry</h5>
+        </div>
+        
+        
+  
+  
+    </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+</header>
+  <main class="container mx-auto">
+
+
+<!-- Del section -->
+<section class="flex justify-between mt-52 ">
+  <div class="max-w-2xl space-y-3">
+     <h1 class="text-3xl font-extrabold">Deal of the day</h1>
+     <p class="text-[#121212]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+     
+
+  <div class="flex gap-5 ">
+    <div>
+      <span class="countdown font-mono text-4xl">
+        <span style="--value:15;"></span>
+      </span>
+      days
+    </div> 
+    <div>
+      <span class="countdown font-mono text-4xl">
+        <span style="--value:10;"></span>
+      </span>
+      hours
+    </div> 
+    <div>
+      <span class="countdown font-mono text-4xl">
+        <span style="--value:24;"></span>
+      </span>
+      min
+    </div> 
+    <div>
+      <span class="countdown font-mono text-4xl">
+        <span style="--value:19;"></span>
+      </span>
+      sec
+    </div>
+  </div>
+
+
+  <div>
+
+  </div>
+</section>
+
+
+
+
+
+  </main>
+    
+
+<footer>
+
+
+
+
+</footer>
+
+
+
+
 </body>
 </html>
